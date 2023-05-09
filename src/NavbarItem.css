@@ -23,10 +23,34 @@
 }
 
 .item img {
-  height: 12px;
+  height: 14px;
+  margin-top: 4px;
 }
 
 .hr-items {
   opacity: 0.1;
   margin: 0 36px;
+}
+.names-wrapper {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .names-wrapper {
+    display: block;
+  }
+  .circle,
+  .hr-items,
+  .item img {
+    display: none;
+  }
+
+  .nav-btn {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .item {
+    padding: 0;
+  }
 }
