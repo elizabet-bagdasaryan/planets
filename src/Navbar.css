@@ -1,0 +1,26 @@
+.header p {
+  font-family: "Antonio", sans-serif;
+  color: white;
+  font-size: 28px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 28px;
+}
+.header img {
+  height: 18px;
+  opacity: 0.25;
+}
+
+body {
+  background-color: #070724;
+  margin: 0;
+  padding: 0;
+}
+
+.hr-head {
+  opacity: 0.2;
+  margin-bottom: 48px;
+}

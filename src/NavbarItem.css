@@ -1,0 +1,32 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  font-family: "League Spartan", sans-serif;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 24px;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.planets-list {
+  display: flex;
+}
+
+.item img {
+  height: 12px;
+}
+
+.hr-items {
+  opacity: 0.1;
+  margin: 0 36px;
+}
