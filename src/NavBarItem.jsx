@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./NavbarItem.css";
-import data from "../data.json";
 import Arrow from "../assets/arrow.png";
 
-const NavBarItem = ({ name, color, isClicked }) => {
+const NavBarItem = ({ name, color, isClicked, handleClick, handleChoice }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -14,6 +13,10 @@ const NavBarItem = ({ name, color, isClicked }) => {
     setIsHovered(false);
   };
 
+  const handlePlanetChoosing = () => {
+    handleChoice();
+    handleClick();
+  };
   return (
     <div className={isClicked ? "names-wrapper-active" : "names-wrapper"}>
       <div className="item">
@@ -26,11 +29,12 @@ const NavBarItem = ({ name, color, isClicked }) => {
             style={{
               borderTopColor: isHovered ? color : "",
             }}
+            onClick={handlePlanetChoosing}
           >
             {name}
           </button>
         </div>
-        <img src={Arrow} alt="Arrow" />
+        <img src={Arrow} alt="Arrow" onClick={handlePlanetChoosing} />
       </div>
       <hr className="hr-items" />
     </div>

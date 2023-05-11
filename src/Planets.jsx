@@ -1,40 +1,10 @@
 import React, { useState } from "react";
 import "./Planets.css";
-
 import data from "../data.json";
-
-const Overview = ({ planet }) => (
-  <div className="section-content">
-    <h3>Overview</h3>
-    <p>{planet.overview.content}</p>
-    <a href={planet.overview.source} target="_blank" rel="noopener noreferrer">
-      Source
-    </a>
-    <img src={planet.images.planet} alt="Planet" />
-  </div>
-);
-
-const Structure = ({ planet }) => (
-  <div className="section-content">
-    <h3>Structure</h3>
-    <p>{planet.structure.content}</p>
-    <a href={planet.structure.source} target="_blank" rel="noopener noreferrer">
-      Source
-    </a>
-    <img src={planet.images.internal} alt="Internal Structure" />
-  </div>
-);
-
-const Geology = ({ planet }) => (
-  <div className="section-content">
-    <h3>Geology</h3>
-    <p>{planet.geology.content}</p>
-    <a href={planet.geology.source} target="_blank" rel="noopener noreferrer">
-      Source
-    </a>
-    <img src={planet.images.geology} alt="Geology" />
-  </div>
-);
+import NavBar from "./NavBar";
+import Overview from "./Overview";
+import Structure from "./Structure";
+import Geology from "./Geology";
 
 function Planets() {
   const [selectedPlanet, setSelectedPlanet] = useState(null);
@@ -49,26 +19,18 @@ function Planets() {
     setActiveSection(section);
   };
 
+  const planetNames = data.map((planet) => planet.name);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Planet Explorer</h1>
-      </header>
-      <div className="planet-list">
-        {data.map((planet, index) => (
-          <div
-            key={index}
-            className={`planet ${selectedPlanet === planet ? "active" : ""}`}
-            onClick={() => handlePlanetClick(planet)}
-          >
-            {planet.name}
-          </div>
-        ))}
-      </div>
+    <div className="main-section">
+      <NavBar
+        planetNames={planetNames}
+        handlePlanetClick={handlePlanetClick}
+        data={data}
+      />
       <div className="planet-details">
         {selectedPlanet ? (
           <>
-            <h2>{selectedPlanet.name}</h2>
             <div className="section-buttons">
               <button
                 className={activeSection === "overview" ? "active" : ""}
@@ -89,6 +51,8 @@ function Planets() {
                 Geology
               </button>
             </div>
+            <hr className="hr-buttons" />
+
             {activeSection === "overview" && (
               <Overview planet={selectedPlanet} />
             )}

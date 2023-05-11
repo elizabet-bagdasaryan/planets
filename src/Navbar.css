@@ -1,3 +1,7 @@
+body {
+  background-image: url(../assets/stars.png);
+}
+
 .header p {
   font-family: "Antonio", sans-serif;
   color: white;
@@ -22,10 +26,13 @@ body {
 
 .hr-head {
   opacity: 0.2;
-  margin-bottom: 48px;
 }
 .hr-desk {
   display: none;
+}
+
+.nav-item:nth-child(1) {
+  margin-top: 48px;
 }
 @media (min-width: 768px) {
   .header img {
@@ -41,9 +48,7 @@ body {
     margin-top: 60px;
     margin-bottom: 44px;
   }
-  body {
-    background-image: url(../assets/stars.png);
-  }
+
   .nav-items-container {
     display: flex;
     flex-direction: row;
