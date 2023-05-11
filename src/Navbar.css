@@ -24,7 +24,9 @@ body {
   opacity: 0.2;
   margin-bottom: 48px;
 }
-
+.hr-desk {
+  display: none;
+}
 @media (min-width: 768px) {
   .header img {
     display: none;
@@ -44,16 +46,29 @@ body {
   }
   .nav-items-container {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav-item {
     display: inline-block;
     margin-right: 10px;
   }
+
+  .hr-desk {
+    display: block;
+    opacity: 0.2;
+    margin-top: 32px;
+  }
 }
 
 @media (min-width: 1336px) {
   .main {
     display: flex;
+    justify-content: space-between;
+  }
+  .hr-desk {
+    margin-top: -16px;
   }
 }

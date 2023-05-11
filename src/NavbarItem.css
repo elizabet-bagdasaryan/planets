@@ -39,6 +39,9 @@
   .names-wrapper {
     display: block;
   }
+  body {
+    padding-top: 0;
+  }
   .circle,
   .hr-items,
   .item img {
@@ -47,10 +50,23 @@
 
   .nav-btn {
     font-size: 16px;
-    margin: 0;
+    margin: 0 0.6vw;
   }
 
   .item {
     padding: 0;
+  }
+}
+
+@media (min-width: 1336px) {
+  .nav-btn {
+    border-top: 4px solid transparent;
+    padding-top: 64px;
+    margin-top: -50px;
+  }
+
+  .nav-btn:hover {
+    border-top: 4px solid;
+    cursor: pointer;
   }
 }

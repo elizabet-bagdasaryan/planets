@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.planet-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.planet {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.planet.active {
+  background-color: #ccc;
+  color: #333;
+}
+
+.planet-details {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.section-buttons button {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.section-buttons button.active {
+  background-color: #ccc;
+  color: #333;
+}
+
+.section-content {
+  margin-bottom: 20px;
+}
+
+.section-content.show {
+  display: block;
+}
+
+.section-content h3 {
+  margin-bottom: 10px;
+}
+
+.section-content p {
+  margin-bottom: 10px;
+}
+
+.section-content a {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: underline;
+}
+
+.section-content img {
+  max-width: 100%;
+}

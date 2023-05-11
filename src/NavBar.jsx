@@ -11,20 +11,23 @@ const NavBar = () => {
     setIsClicked((prevState) => !prevState);
   }
   return (
-    <div className="main">
-      <div className="header">
-        <p>THE PLANETS</p>
-        <img src={Hamburger} onClick={handleClick}></img>
+    <>
+      <div className="main">
+        <div className="header">
+          <p>THE PLANETS</p>
+          <img src={Hamburger} onClick={handleClick}></img>
+        </div>
+        <hr className="hr-head" />
+        <div className="nav-items-container">
+          {data.map((e) => (
+            <div to={e.name} key={e.name} className="nav-item">
+              <NavBarItem name={e.name} color={e.color} isClicked={isClicked} />
+            </div>
+          ))}
+        </div>
       </div>
-      <hr className="hr-head" />
-      <div className="nav-items-container">
-        {data.map((e) => (
-          <div to={e.name} key={e.name} className="nav-item">
-            <NavBarItem name={e.name} color={e.color} isClicked={isClicked} />
-          </div>
-        ))}
-      </div>
-    </div>
+      <hr className="hr-desk" />
+    </>
   );
 };
 
