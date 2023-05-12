@@ -1,0 +1,22 @@
+.footer {
+  text-transform: uppercase;
+  margin: 0 8vw;
+}
+
+.footer div {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 22px;
+  margin: 18px 0;
+  align-items: center;
+}
+
+.footer div p:nth-child(1) {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.footer div p:nth-child(2) {
+  font-size: 18px;
+}

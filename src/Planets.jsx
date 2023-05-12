@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 import Overview from "./Overview";
 import Structure from "./Structure";
 import Geology from "./Geology";
-
+import Footer from "./Footer";
 function Planets() {
   const [selectedPlanet, setSelectedPlanet] = useState(null);
   const [activeSection, setActiveSection] = useState("overview");
@@ -65,6 +65,7 @@ function Planets() {
           <p>Select a planet to view details.</p>
         )}
       </div>
+      {selectedPlanet && <Footer planet={selectedPlanet} />}
     </div>
   );
 }
