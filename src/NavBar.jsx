@@ -1,15 +1,14 @@
-import React, { useState } from "react";
 import NavBarItem from "./NavbarItem";
 import Hamburger from "../assets/hamburger.png";
 import "./NavBar.css";
 
-const NavBar = ({ planetNames, handlePlanetClick, data }) => {
-  const [isClicked, setIsClicked] = useState(false);
-
-  const handleChoice = () => {
-    setIsClicked((prevState) => !prevState);
-  };
-
+const NavBar = ({
+  planetNames,
+  handlePlanetClick,
+  data,
+  handleChoice,
+  isClicked,
+}) => {
   return (
     <>
       <div className="main">

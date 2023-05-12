@@ -66,6 +66,9 @@ body {
     opacity: 0.2;
     margin-top: 32px;
   }
+  .nav-item:nth-child(1) {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1336px) {

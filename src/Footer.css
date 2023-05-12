@@ -1,6 +1,7 @@
 .footer {
   text-transform: uppercase;
   margin: 0 8vw;
+  margin-bottom: 50px;
 }
 
 .footer div {
@@ -19,4 +20,29 @@
 
 .footer div p:nth-child(2) {
   font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 5vw;
+    margin-top: -200px;
+  }
+  .footer div {
+    display: block;
+    text-align: start;
+    margin: 0 5px;
+    width: 160px;
+  }
+
+  .footer div p:nth-child(1) {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+
+  .footer div p:nth-child(2) {
+    font-size: 18px;
+  }
 }

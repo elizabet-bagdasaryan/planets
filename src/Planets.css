@@ -40,8 +40,8 @@ h3 {
 .section-buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  margin-top: -20px;
+  margin-bottom: -7px;
+  margin-top: -22px;
 }
 
 .section-buttons button {
@@ -55,11 +55,13 @@ h3 {
   font-size: 14px;
   font-weight: 600;
   opacity: 0.5;
+  padding-bottom: 18px;
 }
 
 .section-buttons button.active {
   color: white;
   opacity: 1;
+  border-bottom: 4px solid;
 }
 .section-content {
   margin-top: 10px;
@@ -87,8 +89,8 @@ h3 {
   text-decoration: underline;
 }
 
-.section-content img {
-  width: 40vw;
+.planet-img {
+  width: 200px;
   margin: 100px 0;
 }
 .hr-buttons {
@@ -99,23 +101,28 @@ h3 {
   display: flex;
   justify-content: center;
 }
-
+.images {
+  display: flex;
+  justify-content: center;
+}
 .images img:nth-child(2) {
   position: absolute;
-  width: 16vw;
-  margin-top: 50vw;
+  width: 70px;
+  margin-top: 240px;
   margin-bottom: 100px;
 }
 
 .source {
   display: flex;
   justify-content: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   opacity: 0.5;
   margin-top: 500px;
+  align-items: center;
 }
+
 .source a {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 600;
   margin: 0 6px;
 }
@@ -123,5 +130,110 @@ h3 {
 .source img {
   height: 12px;
   width: 12px;
-  margin: 0;
+  margin: 0 4px;
+}
+.planet-details {
+  display: none;
+}
+.small-screen-style {
+  display: block;
+}
+.section-buttons-desk {
+  display: none;
+}
+@media (min-width: 768px) {
+  .section-buttons-desk {
+    display: block;
+  }
+  .hr-buttons {
+    display: none;
+  }
+  .section-buttons {
+    display: none;
+  }
+  .planet-details {
+    display: block;
+  }
+  .section-content {
+    text-align: start;
+  }
+  .section-content h2 {
+    margin: 0 6vw;
+  }
+  .section-content p {
+    width: 368px;
+    font-size: 14px;
+    margin-top: 24px;
+  }
+
+  .source {
+    justify-content: start;
+  }
+  .planet-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "planet-img planet-img"
+      "section-content section-buttons"
+      "footer footer";
+  }
+
+  .planet-img {
+    grid-area: planet-img;
+    margin: auto;
+    width: 400px;
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
+
+  .section-content {
+    grid-area: section-content;
+  }
+
+  .section-buttons-desk {
+    grid-area: section-buttons;
+    margin-left: auto;
+    margin-right: 6vw;
+  }
+  .section-buttons-desk button {
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: grid;
+    grid-auto-flow: row;
+    width: 32vw;
+    display: flex;
+    margin: 16px 0;
+  }
+  .section-buttons-desk button.active {
+    border: none;
+  }
+  .section-buttons-desk button p:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  .footer {
+    grid-area: footer;
+    height: 92px;
+  }
+  .images {
+    grid-area: planet-img;
+    display: flex;
+    justify-content: center;
+  }
+
+  .images img:nth-child(2) {
+    width: 120px;
+    margin-top: 440px;
+  }
 }
