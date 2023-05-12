@@ -120,7 +120,7 @@ function Planets() {
             {activeSection === "geology" && <Geology planet={selectedPlanet} />}
           </>
         ) : (
-          <p>Select a planet to view details.</p>
+          <p></p>
         )}
         {selectedPlanet && <Footer planet={selectedPlanet} />}
       </div>
