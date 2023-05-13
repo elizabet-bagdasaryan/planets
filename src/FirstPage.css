@@ -12,21 +12,21 @@
 }
 @keyframes glow {
   0% {
-    box-shadow: 0 0 0 3px rgb(255, 131, 23), 0 0 0 5px rgb(255, 140, 40);
+    box-shadow: 0 0 0 0.24vw rgb(255, 131, 23), 0 0 0 0.4vw rgb(255, 140, 40);
     transform: rotate(360deg);
   }
   50% {
-    box-shadow: 0 0 0 5px rgb(255, 140, 40), 0 0 0 12px rgb(255, 165, 80),
-      0 0 0 21px rgb(255, 200, 160), 0 0 0 38px rgb(255, 222, 212),
-      0 0 0 50px rgb(255, 242, 238);
+    box-shadow: 0 0 0 0.4vw rgb(255, 140, 40), 0 0 0 0.96vw rgb(255, 165, 80),
+      0 0 0 1.68vw rgb(255, 200, 160), 0 0 0 3.04vw rgb(255, 222, 212),
+      0 0 0 4vw rgb(255, 242, 238);
   }
   60% {
-    box-shadow: 0 0 0 5px rgb(255, 140, 40), 0 0 0 12px rgb(255, 165, 80),
-      0 0 0 21px rgb(255, 200, 160), 0 0 0 38px rgb(255, 222, 212),
-      0 0 0 50px rgb(255, 242, 238);
+    box-shadow: 0 0 0 0.4vw rgb(255, 140, 40), 0 0 0 0.96vw rgb(255, 165, 80),
+      0 0 0 1.68vw rgb(255, 200, 160), 0 0 0 3.04vw rgb(255, 222, 212),
+      0 0 0 4vw rgb(255, 242, 238);
   }
   100% {
-    box-shadow: 0 0 0 3px rgb(255, 131, 23), 0 0 0 5px rgb(255, 140, 40);
+    box-shadow: 0 0 0 0.24vw rgb(255, 131, 23), 0 0 0 0.4vw rgb(255, 140, 40);
     transform: rotate(0);
   }
 }
@@ -35,107 +35,104 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
   overflow: hidden;
 }
 .first-page div {
   border-radius: 50%;
 }
+
 .sun {
-  height: 50px;
-  width: 50px;
+  height: 4vw;
+  width: 4vw;
   background: rgb(255, 105, 0);
   position: absolute;
   animation: glow 5s ease-in-out infinite;
 }
-.planet {
+.planets {
   position: absolute;
   transform: rotate(0deg) translateX(var(--distance));
   animation: motion linear var(--speed) infinite;
 }
 .mercury {
   --speed: 2.41s;
-  --distance: 38.7px;
-  height: 5px;
-  width: 5px;
+  --distance: 3.1vw;
+  height: 0.4vw;
+  width: 0.4vw;
   background: rgb(133, 10, 10);
+  border-radius: 50%;
 }
 .venus {
   --speed: 6.15s;
-  --distance: 72.3px;
-  height: 12px;
-  width: 12px;
+  --distance: 5.8vw;
+  height: 0.96vw;
+  width: 0.96vw;
   background: rgb(224, 133, 67);
 }
 .earth {
   --speed: 10s;
-  --distance: 100px;
-  height: 15px;
-  width: 15px;
+  --distance: 8vw;
+  height: 1.3vw;
+  width: 1.3vw;
   background: rgb(25, 44, 255);
 }
 .mars {
   --speed: 18.8s;
-  --distance: 152px;
-  height: 8px;
-  width: 8px;
+  --distance: 12.2vw;
+  height: 0.64vw;
+  width: 0.64vw;
   background: rgb(218, 81, 39);
 }
 .jupiter {
   --speed: 119s;
-  /*     --distance: 520px; */
-  --distance: 250px;
+  --distance: 20vw;
 
-  height: 75px;
-  width: 75px;
+  height: 6vw;
+  width: 6vw;
   background: rgb(213, 178, 152);
-  box-shadow: 0 0 0 5px white, 0 0 0 7px rgba(213, 178, 152, 0.869),
-    0 0 0 12px white, 0 0 0 22px rgba(213, 178, 152, 0.273), 0 0 0 24px white,
-    0 0 0 34px rgba(213, 178, 152, 0.23);
+  box-shadow: 0 0 0 0.4vw white, 0 0 0 0.56vw rgba(213, 178, 152, 0.869),
+    0 0 0 0.96vw white, 0 0 0 1.76vw rgba(213, 178, 152, 0.273),
+    0 0 0 1.92vw white, 0 0 0 2.72vw rgba(213, 178, 152, 0.23);
 }
 .saturn {
   --speed: 294s;
-  /* --distance: 957px; */
-  --distance: 450px;
+  --distance: 36vw;
 
-  width: 65px;
-  height: 65px;
+  width: 5.2vw;
+  height: 5.2vw;
   background: rgb(214, 145, 96);
-  box-shadow: 0 0 0 3px rgb(255, 255, 255),
-    0 0 0 17px rgba(209, 177, 152, 0.304), 0 0 0 13px rgb(255, 255, 255),
-    0 0 0 30px rgba(185, 111, 54, 0.335), 0 0 0 33px rgb(255, 255, 255),
-    0 0 0 40px rgba(209, 177, 152, 0.261), 0 0 0 38px rgb(255, 255, 255),
-    0 0 0 41px rgba(185, 111, 54, 0.335);
+  box-shadow: 0 0 0 0.24vw rgb(255, 255, 255),
+    0 0 0 1.36vw rgba(209, 177, 152, 0.304), 0 0 0 1.04vw rgb(255, 255, 255),
+    0 0 0 2.4vw rgba(185, 111, 54, 0.335), 0 0 0 2.64vw rgb(255, 255, 255),
+    0 0 0 3.2vw rgba(209, 177, 152, 0.261), 0 0 0 3.04vw rgb(255, 255, 255),
+    0 0 0 3.28vw rgba(185, 111, 54, 0.335);
 }
 .uranus {
   --speed: 837s;
-  /* --distance: 1917px; */
-  --distance: 680px;
+  --distance: 54.4vw;
 
-  height: 40.1px;
-  width: 40.1px;
+  height: 3.2vw;
+  width: 3.2vw;
   background: rgb(165, 176, 192);
-  box-shadow: 0 0 0 7px rgb(255, 255, 255), 0 0 0 8px rgba(112, 67, 227, 0.53),
-    0 0 0 8.5px rgb(255, 255, 255), 0 0 0 10.5px rgba(37, 42, 192, 0.279);
+  box-shadow: 0 0 0 0.56vw rgb(255, 255, 255),
+    0 0 0 0.64vw rgba(112, 67, 227, 0.53), 0 0 0 0.68vw rgb(255, 255, 255),
+    0 0 0 0.84vw rgba(37, 42, 192, 0.279);
 }
 .neptune {
   --speed: 1637s;
-  /* --distance: 3018px; */
-  --distance: 780px;
-
-  height: 30px;
-  width: 30px;
+  --distance: 62.4vw;
+  height: 2.4vw;
+  width: 2.4vw;
   background: rgb(49, 91, 191);
-  box-shadow: 0 0 0 7px rgb(255, 255, 255), 0 0 0 7.8px rgba(112, 67, 227, 0.53),
-    0 0 0 11px rgb(255, 255, 255), 0 0 0 11.8px rgba(37, 42, 192, 0.279),
-    0 0 0 15px rgb(255, 255, 255), 0 0 0 15.8px rgba(37, 42, 192, 0.279);
+  box-shadow: 0 0 0 0.56vw rgb(255, 255, 255),
+    0 0 0 0.62vw rgba(112, 67, 227, 0.53), 0 0 0 0.88vw rgb(255, 255, 255),
+    0 0 0 0.94vw rgba(37, 42, 192, 0.279), 0 0 0 1.2vw rgb(255, 255, 255),
+    0 0 0 1.26vw rgba(37, 42, 192, 0.279);
 }
 .pluto {
   --speed: 2479s;
-  /* --distance: 3948px; */
-  --distance: 850px;
+  --distance: 68vw;
 
-  height: 1.87px;
-  width: 1.87px;
+  height: 0.15vw;
+  width: 0.15vw;
   background: rgb(111, 109, 108);
 }

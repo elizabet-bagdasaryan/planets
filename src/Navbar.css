@@ -3,7 +3,7 @@ body {
 
   background-size: cover;
   -webkit-animation: slidein 100s;
-  animation: slidein 30s;
+  animation: slidein 16s;
 
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;

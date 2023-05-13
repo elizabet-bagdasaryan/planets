@@ -154,6 +154,7 @@ h3 {
     transform: rotate(359deg);
   }
 }
+
 @media (min-width: 768px) {
   .section-buttons-desk {
     display: block;
