@@ -7,6 +7,7 @@ import Structure from "./Structure";
 import Geology from "./Geology";
 import Footer from "./Footer";
 import { useMediaQuery } from "react-responsive";
+import FirstPage from "./FirstPage";
 
 function Planets() {
   const [selectedPlanet, setSelectedPlanet] = useState(null);
@@ -120,7 +121,7 @@ function Planets() {
             {activeSection === "geology" && <Geology planet={selectedPlanet} />}
           </>
         ) : (
-          <p></p>
+          <FirstPage />
         )}
         {selectedPlanet && <Footer planet={selectedPlanet} />}
       </div>

@@ -141,6 +141,19 @@ h3 {
 .section-buttons-desk {
   display: none;
 }
+
+.planet-img {
+  animation: rotation 22s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 @media (min-width: 768px) {
   .section-buttons-desk {
     display: block;
@@ -285,5 +298,8 @@ h3 {
   .images img:nth-child(2) {
     width: 130px;
     margin-top: 360px;
+  }
+  .section-buttons-desk button:hover {
+    background-color: #d8d8d82a;
   }
 }

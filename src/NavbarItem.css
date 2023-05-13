@@ -63,10 +63,12 @@
     border-top: 4px solid transparent;
     padding-top: 64px;
     margin-top: -50px;
+    opacity: 0.75;
   }
 
   .nav-btn:hover {
     border-top: 4px solid;
     cursor: pointer;
+    opacity: 1;
   }
 }

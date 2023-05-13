@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Planets.css";
 import Src from "../assets/source.png";
 const Overview = ({ planet }) => (
