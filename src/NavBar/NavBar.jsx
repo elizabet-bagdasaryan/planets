@@ -1,5 +1,5 @@
 import NavBarItem from "../NavbarItem/NavBarItem";
-import Hamburger from "../assets/hamburger.png";
+import Hamburger from "../../assets/hamburger.png";
 import "./NavBar.css";
 
 const NavBar = ({

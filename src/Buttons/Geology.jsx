@@ -1,6 +1,6 @@
 import React from "react";
-import "./Planets.css";
-import Src from "../assets/source.png";
+import "../Planets/Planets.css";
+import Src from "../../assets/source.png";
 const Geology = ({ planet }) => (
   <>
     <div className="images">
