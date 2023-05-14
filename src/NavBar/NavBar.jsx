@@ -1,6 +1,6 @@
 import NavBarItem from "../NavbarItem/NavBarItem";
 import Hamburger from "../../assets/hamburger.png";
-import "./NavBar.css";
+import "./Navbar.css";
 
 const NavBar = ({
   planetNames,
