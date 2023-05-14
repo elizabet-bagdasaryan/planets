@@ -1,4 +1,4 @@
-import NavBarItem from "./NavbarItem";
+import NavBarItem from "../NavbarItem/NavBarItem";
 import Hamburger from "../assets/hamburger.png";
 import "./NavBar.css";
 
