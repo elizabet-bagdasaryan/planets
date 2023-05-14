@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 
-import Planets from "./Planets";
+import Planets from "./Planets/Planets";
 function App() {
   return (
     <>
