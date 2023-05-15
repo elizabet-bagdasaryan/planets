@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavbarItem.css";
-import Arrow from "../../assets/arrow.png";
+import Arrow from "../assets/arrow.png";
 
 const NavBarItem = ({ name, color, isClicked, handleClick, handleChoice }) => {
   const [isHovered, setIsHovered] = useState(false);
