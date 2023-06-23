@@ -1,6 +1,6 @@
 # Planets Fact Site
 
-![Alt text](https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/ksbsn4xdmhyssrra7ztz.jpg)
+![Alt text](https://res.cloudinary.com/dz209s6jk/image/upload/v1622211615/Challenges/g9eewklurmolti0smptf.jpg)
 
 ## Description
 
